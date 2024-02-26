@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            name.munnu();
+            name.chunnu();
+            Console.ReadLine();
+        }
+    }
+
+    static class name
+    {
+        public static void chunnu()
+        {
+            Console.WriteLine("mera chunnu");
+        }
+        public static void munnu()
+        {
+            Console.WriteLine("mera munnu");
+        }
+    }
+}
