@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = { 5, 4, 1, 6, 8, 7 };
+            Console.WriteLine("before sortin");
+            foreach (var i in array) 
+            { 
+                Console.WriteLine(i);
+            }
+
+            Array.Sort(array);
+            Console.WriteLine("after sorting in acc");
+            foreach(var i in array)
+            {
+                Console.WriteLine(i);
+            }
+
+            Array.Reverse(array);
+            Console.WriteLine("after sorting in desc");
+            foreach (var i in array)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
+        }
+    }
+}
