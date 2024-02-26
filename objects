@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           ChetuUniversity Chetu = new ChetuUniversity();
+            Chetu.subject = "Java";
+            Chetu.Count = 45;
+            Chetu.detail();
+
+            ChetuUniversity Chetu2 = new ChetuUniversity();
+            Chetu2.subject = "dotnet";
+            Chetu2.Count = 30;
+            Chetu2.detail();
+
+            Console.ReadLine(); 
+        }        
+    }
+    class ChetuUniversity
+    {
+        public int Count;
+        public string subject;
+        public void detail() 
+        {
+            Console.WriteLine(subject + " class has no of students- "+Count);
+        }
+    }
+    
+}
